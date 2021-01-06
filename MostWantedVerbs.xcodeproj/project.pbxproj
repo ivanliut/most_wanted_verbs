@@ -11,6 +11,11 @@
 		720B90DC25A5F1DF00635460 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720B90DB25A5F1DF00635460 /* ContentView.swift */; };
 		720B90DE25A5F1E000635460 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 720B90DD25A5F1E000635460 /* Assets.xcassets */; };
 		720B90E125A5F1E000635460 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 720B90E025A5F1E000635460 /* Preview Assets.xcassets */; };
+		720B90EB25A5F23700635460 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720B90EA25A5F23700635460 /* Data.swift */; };
+		720B90EE25A5F24900635460 /* VerbsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720B90ED25A5F24900635460 /* VerbsData.swift */; };
+		720B90F125A5F26B00635460 /* VerbData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720B90F025A5F26B00635460 /* VerbData.swift */; };
+		720B90F425A5F5B600635460 /* VerbDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720B90F325A5F5B600635460 /* VerbDetail.swift */; };
+		720B910725A5F8A900635460 /* verbs.json in Resources */ = {isa = PBXBuildFile; fileRef = 720B910625A5F8A900635460 /* verbs.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +25,11 @@
 		720B90DD25A5F1E000635460 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		720B90E025A5F1E000635460 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		720B90E225A5F1E000635460 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		720B90EA25A5F23700635460 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		720B90ED25A5F24900635460 /* VerbsData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerbsData.swift; sourceTree = "<group>"; };
+		720B90F025A5F26B00635460 /* VerbData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerbData.swift; sourceTree = "<group>"; };
+		720B90F325A5F5B600635460 /* VerbDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerbDetail.swift; sourceTree = "<group>"; };
+		720B910625A5F8A900635460 /* verbs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = verbs.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +62,9 @@
 		720B90D825A5F1DF00635460 /* MostWantedVerbs */ = {
 			isa = PBXGroup;
 			children = (
+				720B910625A5F8A900635460 /* verbs.json */,
+				720B90F325A5F5B600635460 /* VerbDetail.swift */,
+				720B90E925A5F21500635460 /* Model */,
 				720B90D925A5F1DF00635460 /* MostWantedVerbsApp.swift */,
 				720B90DB25A5F1DF00635460 /* ContentView.swift */,
 				720B90DD25A5F1E000635460 /* Assets.xcassets */,
@@ -67,6 +80,16 @@
 				720B90E025A5F1E000635460 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		720B90E925A5F21500635460 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				720B90F025A5F26B00635460 /* VerbData.swift */,
+				720B90ED25A5F24900635460 /* VerbsData.swift */,
+				720B90EA25A5F23700635460 /* Data.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				720B90E125A5F1E000635460 /* Preview Assets.xcassets in Resources */,
+				720B910725A5F8A900635460 /* verbs.json in Resources */,
 				720B90DE25A5F1E000635460 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,6 +163,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				720B90DC25A5F1DF00635460 /* ContentView.swift in Sources */,
+				720B90EB25A5F23700635460 /* Data.swift in Sources */,
+				720B90EE25A5F24900635460 /* VerbsData.swift in Sources */,
+				720B90F425A5F5B600635460 /* VerbDetail.swift in Sources */,
+				720B90F125A5F26B00635460 /* VerbData.swift in Sources */,
 				720B90DA25A5F1DF00635460 /* MostWantedVerbsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

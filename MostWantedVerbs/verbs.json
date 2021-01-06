@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "chanter",
+        "conjugaison": {
+            "je": "chante",
+            "tu": "chantes",
+            "elle": "chante",
+            "nous": "chantons",
+            "vous": "chantez",
+            "elles": "chantent",
+        }
+    },
+    {
+        "id": 2,
+        "name": "manger",
+        "conjugaison": {
+            "je": "mange",
+            "tu": "manges",
+            "elle": "mange",
+            "nous": "mangeons",
+            "vous": "mangez",
+            "elles": "mangent",
+        }
+    },
+]

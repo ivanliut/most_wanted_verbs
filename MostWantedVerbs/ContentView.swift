@@ -8,9 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var verbsData: VerbsData
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            List {
+                ForEach(verbsData.verbs) { verb in
+                    
+                    NavigationLink(
+                        destination: VerbDetail(conjugaison: verb.conjugaison)) {
+                        Text(verb.name)
+                    }
+                    
+                }
+            }
+        }
     }
 }
 
