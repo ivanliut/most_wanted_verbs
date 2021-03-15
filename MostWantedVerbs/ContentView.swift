@@ -22,7 +22,9 @@ struct ContentView: View {
                     
                 }
             }
+            .navigationTitle("Verbs")
         }
+        .accentColor(.black)
     }
 }
 

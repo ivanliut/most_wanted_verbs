@@ -5,10 +5,10 @@
         "conjugaison": {
             "je": "chante",
             "tu": "chantes",
-            "elle": "chante",
+            "il": "chante",
             "nous": "chantons",
             "vous": "chantez",
-            "elles": "chantent",
+            "ils": "chantent",
         }
     },
     {
@@ -17,10 +17,10 @@
         "conjugaison": {
             "je": "mange",
             "tu": "manges",
-            "elle": "mange",
+            "il": "mange",
             "nous": "mangeons",
             "vous": "mangez",
-            "elles": "mangent",
+            "ils": "mangent",
         }
     },
 ]

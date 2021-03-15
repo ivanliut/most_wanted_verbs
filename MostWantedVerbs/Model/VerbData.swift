@@ -12,3 +12,7 @@ struct VerbData: Codable, Identifiable {
     let name: String
     let conjugaison: Dictionary<String, String>
 }
+
+enum Person: String, CaseIterable {
+    case je, tu, il, nous, vous, ils
+}
