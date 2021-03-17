@@ -10,7 +10,12 @@ import Foundation
 struct VerbData: Codable, Identifiable {
     let id: Int
     let name: String
-    let conjugaison: Dictionary<String, String>
+    let conjugaison: Array<VerbForm>
+}
+
+struct VerbForm: Codable {
+    let person: String
+    let form: String
 }
 
 enum Person: String, CaseIterable {

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct VerbDetail: View {
-    var conjugaison: Dictionary<String, String>
+    var conjugaison: Array<VerbForm>
     
     @State var draggedVal = ""
     
@@ -85,13 +85,13 @@ struct VerbDetail: View {
                 HStack {
                     GroupBox {
                         Text("Left Button")
-                    }
+                    } // GROUPBOX
                     .gesture(dragLeft)
                     
                     if middleBtnVisible {
                         GroupBox {
                             Text("Middle Button")
-                        }
+                        } // GROUPBOX
                         .gesture(dragMiddle)
                         .opacity(middleBtnVisible ? 0.7 : 0)
                     }
@@ -99,27 +99,26 @@ struct VerbDetail: View {
                     
                     GroupBox {
                         Text("Right Button")
-                    }
+                    } // GROUPBOX
                     .gesture(dragRight)
+                } // HSTACK
+            } // VSTACK
+            .padding()
+            
+            VStack {
+                ForEach(0 ..< conjugaison.count) { index in
+                    Text("\(conjugaison[index].person) \(conjugaison[index].form)")
                 }
             }
-            .padding()
-            VStack(alignment: .leading, spacing: 20) {
-                Text("\(Person.je.rawValue) \(conjugaison[Person.je.rawValue] ?? "")")
-                Text("\(Person.tu.rawValue) \(conjugaison[Person.tu.rawValue] ?? "")")
-                Text("\(Person.il.rawValue) \(conjugaison[Person.il.rawValue] ?? "")")
-                Text("\(Person.nous.rawValue) \(conjugaison[Person.nous.rawValue] ?? "")")
-                Text("\(Person.vous.rawValue) \(conjugaison[Person.vous.rawValue] ?? "")")
-                Text("\(Person.ils.rawValue) \(conjugaison[Person.ils.rawValue] ?? "")")
+            
+        } // ZSTACK
+        .onAppear {
+            conjugaison.forEach {
+                print($0)
             }
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .foregroundColor(.white)
-            .edgesIgnoringSafeArea(.all)
-            .onAppear(perform: {
-                conjugaison.forEach({
-                    print($0)
-                })
-        })
+            Person.allCases.forEach {
+                print("[allCases] \($0)")
+            }
         }
     
     }

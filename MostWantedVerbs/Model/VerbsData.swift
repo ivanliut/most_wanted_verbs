@@ -10,10 +10,4 @@ import SwiftUI
 
 final class VerbsData: ObservableObject {
     @Published var verbs: [VerbData] = verbsData
-    
-//    var allVerbForms: Dictionary<String, String> {
-//        verbs.map({ singleVerbData in
-//            return singleVerbData.conjugaison
-//        })
-//    }
 }
