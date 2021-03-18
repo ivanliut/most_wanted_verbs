@@ -13,9 +13,15 @@ struct VerbData: Codable, Identifiable {
     let conjugaison: Array<VerbForm>
 }
 
-struct VerbForm: Codable {
+struct VerbForm: Codable, Identifiable {
+    let id = UUID()
     let person: String
     let form: String
+    
+    enum CodingKeys: String, CodingKey {
+        case person
+        case form
+    }
 }
 
 enum Person: String, CaseIterable {
